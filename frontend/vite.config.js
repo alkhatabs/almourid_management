@@ -11,7 +11,7 @@ export default ({ mode }) => {
   const proxy_url =
     process.env.VITE_DEV_REMOTE === 'remote'
       ? process.env.VITE_BACKEND_SERVER
-      : 'http://almourid.ddns.net:8888/api/';
+      : 'http://localhost:8888/api/';
 
   // Define Vite configuration
   const config = {

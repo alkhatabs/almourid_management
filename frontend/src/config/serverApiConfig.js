@@ -5,7 +5,7 @@ export const API_BASE_URL =
     ? // Use the backend server URL specified in VITE_BACKEND_SERVER followed by 'api/'
       import.meta.env.VITE_BACKEND_SERVER + 'api/'
     : // Otherwise, use the hardcoded URL for the API
-      'http://almourid.ddns.net:8888/';
+      'http://localhost:8888/api/';
 
 // Set the base URL for the application depending on the environment
 // If in production or if the environment variable VITE_DEV_REMOTE is true
@@ -14,15 +14,15 @@ export const BASE_URL =
     ? // Use the backend server URL specified in VITE_BACKEND_SERVER
       import.meta.env.VITE_BACKEND_SERVER
     : // Otherwise, use the hardcoded base URL
-      'http://almourid.ddns.net:8888/';
+      'http://localhost:8888/';
 
 // Set the website URL depending on the environment
 // If in production
 export const WEBSITE_URL = import.meta.env.PROD
   ? // Use the specified production website URL
-    'http://cloud.idurarapp.com/'
+    'http://almourid.net/'
   : // Otherwise, use the hardcoded website URL for development
-    'http://almourid.ddns.net:8888/';
+    'http://localhost:3000/';
 
 // Set the download base URL depending on the environment
 // If in production or if the environment variable VITE_DEV_REMOTE is true
@@ -31,7 +31,7 @@ export const DOWNLOAD_BASE_URL =
     ? // Use the backend server URL specified in VITE_BACKEND_SERVER followed by 'download/'
       import.meta.env.VITE_BACKEND_SERVER + 'download/'
     : // Otherwise, use the hardcoded URL for downloads
-      'http://almourid.ddns.net:8888/download/';
+      'http://localhost:8888/download/';
 
 // Set the name of the access token used for authentication
 export const ACCESS_TOKEN_NAME = 'JWT';
